@@ -60,8 +60,8 @@ uav-vision-localization/
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/sidharthmohannair/uav-vision-localization.git
-cd uav-vision-localization
+git clone https://github.com/sidharthmohannair/VisionUAV-Navigation.git
+cd VisionUAV-Navigation
 
 # Install dependencies
 pip install -r requirements.txt
