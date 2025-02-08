@@ -1,122 +1,58 @@
-# UAV Vision-Based Localization System
+# Legacy Implementations - UAV Vision Localization
 
-## Project Overview
-This project develops a sophisticated vision-based localization system for unmanned aerial vehicles (UAVs) operating in GPS-denied environments. The system enables UAVs to determine their position by matching real-time camera feed with satellite imagery through advanced computer vision techniques.
+## Branch Overview
+This branch preserves the historical development path of our UAV vision-based localization system. Each version represents significant architectural decisions, algorithm improvements, and feature additions that have shaped the system's evolution.
 
-The system has evolved through multiple iterations, each enhancing detection accuracy, computational efficiency, and robustness across various environmental conditions. The current implementation (v6.2) features a hybrid detection approach that adaptively combines multiple feature detection algorithms to achieve optimal performance.
+## Version History and Key Developments
 
-## Core Capabilities
+### Version 1.0.0
+Initial implementation:
+- Basic feature detectors (SIFT, ORB, AKAZE, BRISK)
+- Simple testing framework
+- Basic visualization capabilities
+- Fundamental matching algorithms
 
-### Feature Detection and Matching
-The system implements multiple feature detection algorithms, each optimized for specific scenarios:
-- SIFT (Scale-Invariant Feature Transform) for robust scale and rotation handling
-- ORB (Oriented FAST and Rotated BRIEF) for efficient real-time processing
-- AKAZE (Accelerated-KAZE) for handling nonlinear scale space
-- BRISK (Binary Robust Invariant Scalable Keypoints) for fast binary descriptors
-- Hybrid detector (v6.0+) combining multiple algorithms for optimal performance
-
-### Advanced Processing Pipeline
-Our pipeline incorporates several sophisticated techniques:
-- Adaptive preprocessing for varying lighting conditions
-- Region of Interest (ROI) optimization for efficient processing
-- Multi-stage matching with outlier rejection
-- Comprehensive error analysis and visualization
-- Scale and rotation invariant position estimation
-
-### Testing Framework
-The system includes a robust testing framework that evaluates performance across:
-- Multiple environmental conditions
-- Various image transformations (rotation, scale, brightness)
-- Different noise levels and distortions
-- Real-world deployment scenarios
-
-## Project Structure
+## Directory Structure
 ```bash
-uav-vision-localization/
-├── src/                      # Source code
-│   ├── core/                 # Core detection algorithms
-│   ├── utils/                # Utility functions
-│   └── evaluation/           # Testing framework
-├── tests/                    # Test suites
-│   ├── unit/                 # Unit tests
-│   └── integration/          # Integration tests
-├── datasets/                 # Test datasets
-│   ├── satellite/            # Satellite imagery
-│   └── drone/               # Drone camera feeds
-├── results/                  # Evaluation results
-├── docs/                     # Documentation
-└── scripts/                  # Utility scripts
+src/
+├── visul_drone_locl_TestSuite_v1.py   # Initial implementation
 ```
 
-## Getting Started
+## Running Legacy Versions
 
-### Prerequisites
-- Python 3.8 or higher
-- OpenCV 4.5+
-- NumPy
-- Matplotlib
-- Pandas
-
-### Installation
+### Environment Setup
 ```bash
-# Clone the repository
-git clone https://github.com/sidharthmohannair/VisionUAV-Navigation.git
-cd VisionUAV-Navigation
-
-# Install dependencies
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+pip install -r requirements_legacy.txt
 ```
 
-### Basic Usage
-```python
-from src.core.evaluator import PracticalDroneEvaluator
-
-# Initialize evaluator
-evaluator = PracticalDroneEvaluator(
-    satellite_path="datasets/satellite/sample.jpg",
-    drone_images=["datasets/drone/sample.jpg"],
-    drone_position=(lat, lon)  # Optional ground truth
-)
-
-# Run evaluation
-results = evaluator.run_evaluation()
-
-# Generate comprehensive report
-evaluator.generate_report()
+### Execution
+Each version can be run independently:
+```bash
+python visul_drone_locl_TestSuite_v<version>.py
 ```
 
-## Development Status
-![Version](https://img.shields.io/badge/version-6.2.0-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![OpenCV](https://img.shields.io/badge/opencv-4.5%2B-green)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+### Test Results
+Results for each version are preserved in corresponding directories:
+```bash
+results/
+├── v1_results/
+├── v2_results/
+└── ...
+```
 
-## Performance Metrics
-Our latest version achieves:
-- Position accuracy: <1% of flight height
-- Processing time: <100ms per frame
-- Match quality: >80% inlier ratio
-- Success rate: >95% across test scenarios
+## Implementation Notes
+- Each version builds upon lessons learned from previous implementations
+- Code comments explain key algorithmic decisions
+- Test results demonstrate incremental improvements
+- Documentation captures design evolution
 
-## Documentation
-- [Algorithm Deep Dive](docs/algorithms/)
-- [API Reference](docs/api/)
-- [Development History](docs/history.md)
-- [Performance Analysis](docs/benchmarks.md)
-- [Implementation Guide](docs/implementation.md)
+## Transition to Modern Implementation
+The latest production version has been restructured into a modular architecture. See the `main` branch for the current implementation.
 
-## Contributing
-We welcome contributions! See our [Contribution Guidelines](CONTRIBUTING.md) for details on:
-- Code style and standards
-- Testing requirements
-- Pull request process
-- Development workflow
-
-## License
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-This project builds upon research in computer vision and UAV navigation, particularly:
-- Feature detection algorithms (SIFT, ORB, AKAZE, BRISK)
-- OpenCV library and community
-- Related research in vision-based navigation
+## Historical Documentation
+- [Original Design Documents](docs/legacy/design/)
+- [Test Reports](docs/legacy/reports/)
+- [Performance Comparisons](docs/legacy/benchmarks/)
+- [Development Notes](docs/legacy/notes/)
