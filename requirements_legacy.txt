@@ -1,0 +1,41 @@
+# Requirements for UAV Vision-Based Localization System Legacy Versions
+# Versions v1.0.0 through v6.2.0
+# Compatible with Python 3.8+
+# Last Updated: February 2024
+#
+# Note: Some packages are marked as optional and can be commented out
+# for minimal installation. See documentation for details.
+
+# Core Computer Vision and Scientific Libraries
+opencv-python>=4.5.0,<4.7.0    # Core OpenCV functionality for image processing and feature detection
+opencv-contrib-python>=4.5.0,<4.7.0    # Additional OpenCV modules for SIFT and other advanced detectors
+numpy>=1.19.0,<1.24.0    # Numerical computing and array operations
+scipy>=1.6.0,<1.10.0    # Scientific computing utilities
+
+# Data Analysis and Processing
+pandas>=1.2.0,<1.5.0    # Data manipulation and analysis
+scikit-learn>=0.24.0,<1.0.0    # Machine learning utilities for data processing
+
+# Visualization
+matplotlib>=3.3.0,<3.7.0    # Plotting and visualization
+seaborn>=0.11.0,<0.12.0    # Enhanced visualization capabilities
+
+# Image Processing
+Pillow>=8.0.0,<9.5.0    # Python Imaging Library for image handling
+
+# Development and Testing
+pytest>=6.0.0,<7.0.0    # Testing framework
+pytest-cov>=2.10.0,<3.0.0    # Test coverage reporting
+flake8>=3.8.0,<4.0.0    # Code style checking
+
+# Logging and Configuration
+pyyaml>=5.4.0,<6.0.0    # YAML file handling for configurations
+python-json-logger>=2.0.0,<3.0.0    # JSON formatted logging
+
+# Optional but Recommended
+tqdm>=4.50.0,<4.65.0    # Progress bars for long-running operations
+joblib>=1.0.0,<1.2.0    # Parallel processing utilities
+
+# System and File Handling
+psutil>=5.8.0,<5.9.0    # System monitoring utilities
+pathlib>=1.0.1,<1.1.0    # Object-oriented filesystem paths
