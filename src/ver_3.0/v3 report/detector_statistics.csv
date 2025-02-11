@@ -1,0 +1,7 @@
+,computation_time,computation_time,matches_count,matches_count,match_quality,match_quality,success
+,mean,std,mean,std,mean,std,mean
+detector,,,,,,,
+akaze,14.505,1.86,7278.8,2466.084,0.639,0.402,1.0
+brisk,23.619,19.279,11048.2,11922.897,0.391,0.241,1.0
+orb,7.117,0.067,333.6,34.667,1.0,0.0,1.0
+sift,13.716,0.151,54.0,25.07,0.053,0.06,1.0
