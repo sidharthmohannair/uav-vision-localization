@@ -1,0 +1,23 @@
+=== Drone Localization Evaluation Summary ===
+
+Test Cases Evaluated:
+- drone_image_normal: drone_image: Standard view comparison
+- drone_image_rotated: drone_image: Drone image rotated 45 degrees
+- drone_image_scaled: drone_image: Drone image scaled to 80%
+- drone_image_brightness: drone_image: Increased brightness
+- drone_image_noise: drone_image: Added Gaussian noise
+
+Detector Performance Summary:
+         computation_time         matches_count            match_quality        success
+                     mean     std          mean        std          mean    std    mean
+detector                                                                               
+akaze              14.505   1.860        7278.8   2466.084         0.639  0.402     1.0
+brisk              23.619  19.279       11048.2  11922.897         0.391  0.241     1.0
+orb                 7.117   0.067         333.6     34.667         1.000  0.000     1.0
+sift               13.716   0.151          54.0     25.070         0.053  0.060     1.0
+
+Best Performer by Category:
+Fastest: orb
+Most Matches: brisk
+Best Quality: orb
+Most Reliable: akaze
