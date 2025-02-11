@@ -11,11 +11,18 @@ Initial implementation:
 - Simple testing framework
 - Basic visualization capabilities
 - Fundamental matching algorithms
+### Version 2.0.0
+Feature enhancements:
+- Improved feature matching
+- Optimized detector parameters
+- Enhanced visualization tools
+- Better performance metrics
 
 ## Directory Structure
 ```bash
 src/
 ├── visul_drone_locl_TestSuite_v1.py   # Initial implementation
+├── visul_drone_locl_TestSuite_v2.py   # Enhanced matching
 ```
 
 ## Running Legacy Versions
