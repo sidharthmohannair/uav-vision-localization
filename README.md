@@ -29,6 +29,12 @@ Focus on accuracy:
 - Enhanced error visualization
 - Improved report generation
 - Better validation methods
+### Version 5.0.0
+Testing framework enhancement:
+- Comprehensive test suite implementation
+- Multiple scenario testing capabilities
+- Advanced reporting system
+- Improved visualization tools
 
 ## Directory Structure
 ```bash
@@ -38,6 +44,7 @@ src/
 ├── visul_drone_locl_TestSuite_v2.py   # Enhanced matching
 ├── visul_drone_locl_TestSuite_v3.py   # Error tracking
 ├── visul_drone_locl_TestSuite_v4.py   # Improved validation
+├── visul_drone_locl_TestSuite_v5.py   # Testing framework
 ```
 
 ## Running Legacy Versions
@@ -72,9 +79,10 @@ results/
 
 ## Transition to Modern Implementation
 The latest production version has been restructured into a modular architecture. See the `main` branch for the current implementation.
-
+<!--
 ## Historical Documentation
 - [Original Design Documents](docs/legacy/design/)
 - [Test Reports](docs/legacy/reports/)
 - [Performance Comparisons](docs/legacy/benchmarks/)
 - [Development Notes](docs/legacy/notes/)
+>
