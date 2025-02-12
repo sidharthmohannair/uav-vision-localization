@@ -17,12 +17,27 @@ Feature enhancements:
 - Optimized detector parameters
 - Enhanced visualization tools
 - Better performance metrics
+### Version 3.0.0
+Error handling improvements:
+- Basic position error calculation
+- Initial visualization system
+- Enhanced test cases
+- Improved validation methods
+### Version 4.0.0
+Focus on accuracy:
+- Position error tracking implementation
+- Enhanced error visualization
+- Improved report generation
+- Better validation methods
 
 ## Directory Structure
 ```bash
 src/
+├── ver 0 to ver 1.0 and all   # Initial testing
 ├── visul_drone_locl_TestSuite_v1.py   # Initial implementation
 ├── visul_drone_locl_TestSuite_v2.py   # Enhanced matching
+├── visul_drone_locl_TestSuite_v3.py   # Error tracking
+├── visul_drone_locl_TestSuite_v4.py   # Improved validation
 ```
 
 ## Running Legacy Versions
