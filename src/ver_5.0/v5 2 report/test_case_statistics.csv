@@ -1,0 +1,21 @@
+test_case,description,detector,computation_time,matches_count,match_quality,success
+drone_image_brightness,drone_image: Increased brightness,akaze,15.454,9202.0,0.74,1.0
+drone_image_brightness,drone_image: Increased brightness,brisk,17.344,9020.0,0.324,1.0
+drone_image_brightness,drone_image: Increased brightness,orb,7.111,361.0,1.0,1.0
+drone_image_brightness,drone_image: Increased brightness,sift,17.031,115.0,0.043,1.0
+drone_image_noise,drone_image: Added Gaussian noise,akaze,17.387,10221.0,0.007,1.0
+drone_image_noise,drone_image: Added Gaussian noise,brisk,57.052,32001.0,0.001,1.0
+drone_image_noise,drone_image: Added Gaussian noise,orb,7.216,276.0,1.0,1.0
+drone_image_noise,drone_image: Added Gaussian noise,sift,16.351,34.0,0.0,1.0
+drone_image_normal,drone_image: Standard view comparison,akaze,13.943,7027.0,1.0,1.0
+drone_image_normal,drone_image: Standard view comparison,brisk,14.865,5772.0,0.594,1.0
+drone_image_normal,drone_image: Standard view comparison,orb,7.213,343.0,1.0,1.0
+drone_image_normal,drone_image: Standard view comparison,sift,20.533,103.0,0.175,1.0
+drone_image_rotated,drone_image: Drone image rotated 45 degrees,akaze,13.397,5637.0,0.94,1.0
+drone_image_rotated,drone_image: Drone image rotated 45 degrees,brisk,14.04,4206.0,0.502,1.0
+drone_image_rotated,drone_image: Drone image rotated 45 degrees,orb,7.133,343.0,1.0,1.0
+drone_image_rotated,drone_image: Drone image rotated 45 degrees,sift,19.296,101.0,0.069,1.0
+drone_image_scaled,drone_image: Drone image scaled to 80%,akaze,12.879,4275.0,0.506,1.0
+drone_image_scaled,drone_image: Drone image scaled to 80%,brisk,13.962,4161.0,0.536,1.0
+drone_image_scaled,drone_image: Drone image scaled to 80%,orb,7.049,348.0,1.0,1.0
+drone_image_scaled,drone_image: Drone image scaled to 80%,sift,15.834,98.0,0.041,1.0
